@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title style="color:#1e293b;">Florencia Lob | Software Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<script>
+  function openVideo() {
+    const modal = document.getElementById("videoModal");
+    const video = document.getElementById("demoVideo");
+    modal.style.display = "block";
+    video.play();
+  }
+  
+  function closeVideo() {
+    const modal = document.getElementById("videoModal");
+    const video = document.getElementById("demoVideo");
+    video.pause();
+    modal.style.display = "none";
+  }
+</script>
+  
+  
+  
+<body>
+  <div class="container">
+    <header>
+        <h1>Florencia Lob</h1>
+        <h2 style="color:#1d4ed8;">Software Developer</h2>
+        <div class="contact-columns">
+          <div class="contact">
+            <p><img src="src/email-icon.png" alt="Email icon" class="icon"> Email: <a href="mailto:flor@lob.com.ar" target="_blank">flor@lob.com.ar</a></p>
+            <p><img src="src/linkedin-icon.png" alt="LinkedIn icon" class="icon"> LinkedIn: <a href="https://linkedin.com/in/florencia-lob" target="_blank">linkedin.com/in/florencia-lob</a></p>
+          </div>
+  
+          <div class="contact">
+            <p><img src="src/phone-icon.png" alt="Phone icon" class="icon"> Phone: +(972) 53-5698-414</p>
+            <p><img src="src/location-icon.png" alt="Location icon" class="icon"> Location: Raanana, Israel</p>
+          </div>
+        </div>
+  
+        <div class="cv-button">
+          <a href="src/Florencia_Lob_CV.pdf" class="btn-cv" target="_blank">Download My CV</a>
+        </div>
+      </header>
+
+    <section class="summary">
+      <h3>Summary</h3>
+      <p>I’m a software developer with over two years of experience building full-stack systems during my military service in the IDF, and more than four years of frontend development focused on usability and performance.
+        I enjoy turning complex problems into simple, user-friendly solutions — and believe that clean architecture and good design go hand in hand. <br/> I’m excited to join a team where I can keep learning, contributing, and building things that matter.</p>
+    </section>
+
+    <section class="projects">
+      <h3>Selected Projects</h3>
+      <div class="project">
+        <h4>Centralized Attendance Tracker</h4>
+        <p>Check-in system for large-scale events. Enabled Excel imports, real-time ID scanning, and live reporting through a responsive admin panel.</p>
+        <p><strong>Tech:</strong> React, FastAPI, MySQL</p>
+        <a href="src/videos/attendance_tracker.mp4" target="_blank" class="video-btn">Watch Demo Video</a>
+      </div>
+      
+      <div class="project">
+        <h4>Zoom License Automation System</h4>
+        <p>Automated Zoom scheduling across military units. Replaced a slow manual process with a full-stack platform including user sign-up, approvals, availability checks, and auto license assignment.</p>
+        <p><strong>Tech:</strong> React, FastAPI, MySQL</p>
+        <a href="src/videos/zoom-scheduler.mp4" target="_blank" class="video-btn">Watch Demo Video</a>
+      </div>      
+
+      <div class="project">
+        <h4>Client Interface Development</h4>
+        <p>Developed a set of responsive frontend pages for a client platform while working at a tech company. Focused on layout consistency, usability, and modern component design.</p>
+        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+        <p><a href="src/pdf/interface-samples.pdf" target="_blank">View Sample (PDF)</a></p>
+      </div>  
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
